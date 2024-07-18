@@ -11,19 +11,19 @@ export default function Videos() {
   useEffect(() => {
     const shuffledLinks = [...youtubeVideoLinks.url]
       .sort(() => 0.5 - Math.random())
-      .slice(0, 9);
+      .slice(0, 9); // Keep 9 videos for a 3x3 grid on larger screens
     setSelectedLinks(shuffledLinks);
   }, []);
 
   return (
-    <section className="flex flex-col justify-center items-center gap-4">
-      <h1 className="font-black text-4xl text-zinc-200">
+    <section className="flex flex-col justify-center items-center gap-4 p-4">
+      <h1 className="font-black text-4xl text-zinc-200 text-center">
         Tu quer assistir uns vídeos interessantes?
       </h1>
-      <p className="text-zinc-400">
+      <p className="text-zinc-400 text-center">
         Dica: se tu der um F5, novos vídeos vão aparecer
       </p>
-      <div className="grid grid-cols-3 grid-rows-3 gap-4">
+      <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:grid-cols-3 sm:grid-rows-3">
         {selectedLinks.map((link) => {
           const videoId = link.split("=")[1];
           const videoUrl = `https://www.youtube.com${link}`;
