@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Logo from "./Logo";
 import SidebarMenu from "./SideBarMenu";
 import menuItemContent from "@/contants/menu-item-constants";
 import {
@@ -24,7 +23,6 @@ export default function Header() {
   return (
     <>
       <header className="flex justify-between items-center gap-5 px-5 bg-zinc-700 border-b-2 border-zinc-600 py-2 md:h-14 md:py-0">
-        <Logo />
         {isMobile ? (
           <button className="sm:hidden text-white" onClick={toggleSidebar}>
             ☰
