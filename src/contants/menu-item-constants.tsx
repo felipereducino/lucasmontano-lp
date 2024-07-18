@@ -2,6 +2,7 @@ import {
   IconBrandDiscord,
   IconBrandYoutube,
   IconCode,
+  IconCoin,
   IconInfoSquareRounded,
   IconSos,
   IconUrgent,
@@ -40,7 +41,7 @@ const menuItemContent: MenuItemConstants[] = [
     title: "Curadoria",
   },
   {
-    icon: <IconInfoSquareRounded />,
+    icon: <IconCoin />,
     path: "/remote-work",
     title: "Trabalha remoto para os 🇺🇸?",
   },
