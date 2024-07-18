@@ -4,7 +4,7 @@ import sosRs from "../../../assets/sosRs.webp";
 
 export default function HelpRs() {
   return (
-    <main className="flex flex-col gap-10">
+    <section className="flex items-center flex-col gap-10">
       <h1 className="font-black text-3xl">AJUDA - RS 🧉</h1>
       <ul className="text-xl list-disc px-10">
         <li>
@@ -43,6 +43,6 @@ export default function HelpRs() {
       <div className="flex justify-center">
         <Image src={sosRs} alt="Ajude - RS" width={700} height={270} />
       </div>
-    </main>
+    </section>
   );
 }

@@ -11,7 +11,6 @@ export default function MainPage(props: MainPage) {
     <div className="flex flex-col h-screen">
       <Header />
       <div className="flex-grow flex">
-        <MainMenu />
         <div className="flex flex-col flex-1">
           <main className="p-7 flex-1">{props.children}</main>
           <Footer />

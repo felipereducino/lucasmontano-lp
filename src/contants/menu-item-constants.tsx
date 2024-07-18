@@ -7,13 +7,13 @@ import {
   IconUrgent,
 } from "@tabler/icons-react";
 
-interface MenuItemConstants {
+type MenuItemConstants = {
   icon: React.ReactNode;
   path: string;
   title: string;
-}
+};
 
-const menuItemContent = [
+const menuItemContent: MenuItemConstants[] = [
   {
     icon: <IconSos />,
     path: "/help",
@@ -49,6 +49,6 @@ const menuItemContent = [
     path: "/videos",
     title: "Vídeos",
   },
-] as Array<MenuItemConstants>;
+];
 
 export default menuItemContent;
